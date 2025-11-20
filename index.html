@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DripSupplyCo - Streetwear & Tênis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="logo">DripSupplyCo</div>
+        <nav>
+            <a href="#" onclick="showHome()">Home</a>
+            <a href="#" onclick="renderProducts('tenis')">Tênis</a>
+            <a href="#" onclick="showSobreNos()">Sobre Nós</a>
+            <a href="#" onclick="showContato()">Contato</a>
+        </nav>
+        <div class="actions">
+            <input type="text" id="searchInput" placeholder="Buscar..." oninput="searchProducts()">
+            <button id="cartBtn">Carrinho <span id="cartCount">0</span></button>
+        </div>
+    </div>
+</header>
+
+<section class="hero" id="homeSection">
+    <div class="container">
+        <h1>Encontre seu estilo único</h1>
+        <p>Os melhores produtos streetwear e sneakers do mercado.</p>
+    </div>
+</section>
+
+<section id="productSection" class="container products"></section>
+
+<section id="detailSection" class="container detail-page" style="display:none;"></section>
+
+<section id="cartSection" class="container detail-page" style="display:none;"></section>
+
+<section id="sobreNosSection" class="container detail-page" style="display:none;">
+    <h2>Sobre Nós</h2>
+    <p>Na DripSupplyCo, buscamos trazer o melhor do streetwear e sneakers exclusivos para você. Trabalhamos com marcas icônicas como Nike, TN e Tech Fleece, garantindo estilo, conforto e autenticidade. Nossa missão é oferecer produtos de qualidade que expressem sua personalidade e estilo único. Venha fazer parte da nossa comunidade e descubra por que somos referência no universo streetwear.</p>
+    <img data-src="Img/tech.jpg" alt="Tech Fleece" class="fade-in">
+</section>
+
+<section id="contactSection" class="container detail-page" style="display:none; text-align:center;">
+    <h2>Suporte ao Cliente</h2>
+    <p>Estamos aqui para ajudar!</p>
+    <p>Telefone: <strong>+55 (15) 99850-0726</strong></p>
+</section>
+
+<footer id="contato">
+    <p>© 2025 DripSupplyCo - Todos os direitos reservados.</p>
+</footer>
+
+<div id="alertBox" class="alert-box">Produto adicionado ao carrinho!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
